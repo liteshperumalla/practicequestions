@@ -4,16 +4,16 @@
 int findCharacterType(char ch) {
     if (isalpha(ch)) {
         if (isupper(ch)) {
-            return 1; // 'A' to 'Z'
+            return 1; 
         } else {
-            return 2; // 'a' to 'z'
+            return 2; 
         }
     } else if (isdigit(ch)) {
-        return 3; // '0' to '9'
+        return 3; 
     } else if (isgraph(ch)) {
-        return 4; // Any other printable symbol
+        return 4; 
     } else {
-        return 5; // Non-printable symbol
+        return 5; 
     }
 }
 
